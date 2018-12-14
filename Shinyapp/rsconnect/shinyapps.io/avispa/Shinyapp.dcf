@@ -1,0 +1,12 @@
+name: Shinyapp
+title: Shinyapp
+username:
+account: avispa
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 616756
+bundleId: 1762507
+url: https://avispa.shinyapps.io/Shinyapp/
+when: 1544765809.42464
+asMultiple: FALSE
+asStatic: FALSE
