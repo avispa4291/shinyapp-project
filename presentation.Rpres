@@ -1,0 +1,68 @@
+<style>
+.small-code pre code {
+  font-size: 1em;
+}
+</style>
+
+
+Developing Data Products Presentation
+========================================================
+author: SL
+date: 12/18/2018
+autosize: false
+
+Iris Dataset Explorer
+========================================================
+
+<br>
+
+This presentation was created in conjunction with my "Histogram of selected Iris variable in reference to frequency" application. It is part of the Developing Data Prducts course and is meant to show the following concepts were learned during the course:
+
+<br>
+
+- How to build an application using the Shiny package in R
+- Ability to create and publish a presentation using R presentations or slidify
+
+Application Description 
+========================================================
+class: small-code
+My shiny app used the Iris dataset and allowed the user to display the frequency at which different variables occured in the dataset by using the selectInput and sliderInput functions. I also used radioButtons to change the color of the histogram.
+
+
+My Application
+========================================================
+As part of the course the student was asked to create an application using the shiny package.
+
+The application that I created for this project is located at:
+<https://avispa.shinyapps.io/Shinyapp/>
+
+The sourcecode for the application as well as the code for this presentation is located at:
+<https://github.com/avispa4291/shinyapp-project>
+
+
+
+Example of R Expression
+========================================================
+class: small-code
+Below is an example of the data used.
+
+```{r}
+summary(iris)
+```
+
+Example Display of Distribution of Iris Dataset Variables
+========================================================
+
+```{r, echo=FALSE, fig.width=20, fig.height=20, fig.align='center'}
+
+iriss <- c(10, 13, 26, 34)
+
+
+pie(iriss, main="Display of Iris variables", col=rainbow(length(iriss)),
+   labels=c("Sepal.Length","Sepal.Width","Petal.Length","Petal.Width"), cex=3, cex.main=5)
+```
+    
+    
+   
+    
+
